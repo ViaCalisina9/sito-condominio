@@ -315,11 +315,17 @@ li + li {
   box-shadow: 0 12px 28px rgba(30, 43, 41, 0.11);
 }
 
-.section-link__kicker {
+.section-link__icon {
   display: block;
-  margin-bottom: 1.7rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 1.45rem;
   color: var(--warm);
-  font-weight: 800;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .section-link__title {

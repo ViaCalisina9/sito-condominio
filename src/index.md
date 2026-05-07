@@ -22,17 +22,31 @@ templateEngineOverride: njk,md
 
 <section class="section-links" aria-label="Sezioni principali">
   <a class="section-link" href="storia/">
-    <span class="section-link__kicker">01</span>
+    <svg class="section-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 21h18"></path>
+      <path d="M5 21V9l7-4 7 4v12"></path>
+      <path d="M9 21v-7h6v7"></path>
+      <path d="M10 10h4"></path>
+    </svg>
     <span class="section-link__title">Storia</span>
     <small>Una breve pagina dedicata alla memoria del comprensorio.</small>
   </a>
   <a class="section-link" href="avvisi/">
-    <span class="section-link__kicker">02</span>
+    <svg class="section-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 11v2a2 2 0 0 0 2 2h3l7 4V5L8 9H5a2 2 0 0 0-2 2Z"></path>
+      <path d="M19 9a4 4 0 0 1 0 6"></path>
+      <path d="M8 15l1 5"></path>
+    </svg>
     <span class="section-link__title">Avvisi</span>
     <small>Comunicazioni pubbliche ordinate dalla pi&ugrave; recente.</small>
   </a>
   <a class="section-link" href="documenti/">
-    <span class="section-link__kicker">03</span>
+    <svg class="section-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"></path>
+      <path d="M14 3v5h5"></path>
+      <path d="M9 13h6"></path>
+      <path d="M9 17h4"></path>
+    </svg>
     <span class="section-link__title">Documenti pubblici</span>
     <small>File consultabili senza accessi o registrazioni.</small>
   </a>
