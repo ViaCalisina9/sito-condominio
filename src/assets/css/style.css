@@ -251,8 +251,7 @@ li + li {
 .home-hero__visual {
   position: relative;
   margin: 0;
-  aspect-ratio: 4 / 3;
-  min-height: 20rem;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -533,9 +532,6 @@ li + li {
     min-height: 29rem;
   }
 
-  .home-hero__visual {
-    min-height: 26rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -553,10 +549,6 @@ li + li {
 
   h1 {
     font-size: 2.25rem;
-  }
-
-  .home-hero__visual {
-    min-height: 16rem;
   }
 
 }
