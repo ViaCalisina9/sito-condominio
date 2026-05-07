@@ -8,17 +8,21 @@
     <link rel="icon" href="{{ '/favicon.svg' | relativeUrl(page.url) }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relativeUrl(page.url) }}">
   </head>
-  <body>
+  {% set currentUrl = page.url or "/" %}
+  <body class="{% if currentUrl == '/' %}home{% else %}page{% endif %}">
     <a class="skip-link" href="#contenuto">Salta al contenuto</a>
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="site-title" href="{{ '/' | relativeUrl(page.url) }}">{{ site.name }}</a>
+        <a class="site-title" href="{{ '/' | relativeUrl(page.url) }}" aria-label="{{ site.name }} - Home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>{{ site.name }}</span>
+        </a>
         <nav class="site-nav" aria-label="Navigazione principale">
-          <a href="{{ '/' | relativeUrl(page.url) }}">Home</a>
-          <a href="{{ '/storia/' | relativeUrl(page.url) }}">Storia</a>
-          <a href="{{ '/avvisi/' | relativeUrl(page.url) }}">Avvisi</a>
-          <a href="{{ '/documenti/' | relativeUrl(page.url) }}">Documenti pubblici</a>
+          <a href="{{ '/' | relativeUrl(page.url) }}"{% if currentUrl == "/" %} aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/storia/' | relativeUrl(page.url) }}"{% if currentUrl == "/storia/" %} aria-current="page"{% endif %}>Storia</a>
+          <a href="{{ '/avvisi/' | relativeUrl(page.url) }}"{% if currentUrl.indexOf("/avvisi/") == 0 %} aria-current="page"{% endif %}>Avvisi</a>
+          <a href="{{ '/documenti/' | relativeUrl(page.url) }}"{% if currentUrl == "/documenti/" %} aria-current="page"{% endif %}>Documenti</a>
         </nav>
       </div>
     </header>
@@ -32,7 +36,7 @@
         <p>&copy; {{ currentYear }} {{ site.name }}.</p>
         <p>
           <a href="{{ '/privacy/' | relativeUrl(page.url) }}">Privacy</a>
-          {% if site.email %}<span aria-hidden="true"> · </span><a href="mailto:{{ site.email }}">Contatti</a>{% endif %}
+          {% if site.email %}<span aria-hidden="true"> &middot; </span><a href="mailto:{{ site.email }}">Contatti</a>{% endif %}
         </p>
       </div>
     </footer>

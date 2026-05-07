@@ -5,26 +5,46 @@ description: "Homepage del sito pubblico del condominio Via Calisina 9."
 permalink: /
 templateEngineOverride: njk,md
 ---
-# Via Calisina 9
+<div class="home-hero">
+  <div class="home-hero__copy">
+    <p class="eyebrow">Sito pubblico del condominio</p>
+    <h1>Via Calisina 9</h1>
+    <p class="lead">Uno spazio ordinato per avvisi, documenti pubblici e informazioni essenziali del condominio e comprensorio.</p>
+    <div class="hero-actions" aria-label="Azioni principali">
+      <a class="button-link" href="avvisi/">Consulta avvisi</a>
+      <a class="text-link" href="documenti/">Documenti pubblici</a>
+    </div>
+  </div>
+  <div class="home-hero__visual" aria-hidden="true">
+    <div class="facade">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+    <div class="courtyard"></div>
+  </div>
+</div>
 
-Benvenuti nel sito pubblico del condominio e comprensorio di Via Calisina 9. Questo spazio raccoglie informazioni essenziali, avvisi e documenti pubblici consultabili dai residenti.
-
-<div class="section-links" aria-label="Sezioni principali">
+<section class="section-links" aria-label="Sezioni principali">
   <a class="section-link" href="storia/">
-    <span>Storia</span>
+    <span class="section-link__kicker">01</span>
+    <span class="section-link__title">Storia</span>
     <small>Una breve pagina dedicata alla memoria del comprensorio.</small>
   </a>
   <a class="section-link" href="avvisi/">
-    <span>Avvisi</span>
-    <small>Comunicazioni pubbliche ordinate dalla più recente.</small>
+    <span class="section-link__kicker">02</span>
+    <span class="section-link__title">Avvisi</span>
+    <small>Comunicazioni pubbliche ordinate dalla pi&ugrave; recente.</small>
   </a>
   <a class="section-link" href="documenti/">
-    <span>Documenti pubblici</span>
+    <span class="section-link__kicker">03</span>
+    <span class="section-link__title">Documenti pubblici</span>
     <small>File consultabili senza accessi o registrazioni.</small>
   </a>
-</div>
+</section>
 
-## Ultimi avvisi
+<section class="content-section latest-notices" aria-labelledby="ultimi-avvisi">
+<h2 id="ultimi-avvisi">Ultimi avvisi</h2>
 
 {% if collections.avvisi | length %}
 <ol class="notice-list compact-list">
@@ -43,3 +63,4 @@ Benvenuti nel sito pubblico del condominio e comprensorio di Via Calisina 9. Que
 {% endif %}
 
 <p><a class="text-link" href="avvisi/">Vedi tutti gli avvisi</a></p>
+</section>
