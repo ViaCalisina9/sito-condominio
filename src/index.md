@@ -15,14 +15,9 @@ templateEngineOverride: njk,md
       <a class="text-link" href="documenti/">Documenti pubblici</a>
     </div>
   </div>
-  <div class="home-hero__visual" aria-hidden="true">
-    <div class="facade">
-      <span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-    </div>
-    <div class="courtyard"></div>
-  </div>
+  <figure class="home-hero__visual">
+    <img src="{{ '/assets/img/ex-pastificio-pantanella.jpg' | relativeUrl(page.url) }}" alt="Vista dell'ex Pastificio Pantanella e degli edifici circostanti">
+  </figure>
 </div>
 
 <section class="section-links" aria-label="Sezioni principali">
