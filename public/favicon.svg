@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Via Calisina 9</title>
+  <rect width="64" height="64" rx="10" fill="#315f72"/>
+  <path d="M16 48V26l16-12 16 12v22H37V35H27v13H16z" fill="#ffffff"/>
+  <path d="M22 48h20" stroke="#d9d6cf" stroke-width="4" stroke-linecap="round"/>
+</svg>

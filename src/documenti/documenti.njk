@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Documenti pubblici
+description: "Elenco dei documenti pubblici del condominio Via Calisina 9."
+permalink: /documenti/
+---
+<h1>Documenti pubblici</h1>
+
+<p>I documenti sono elencati dal più recente al meno recente. I file di esempio non contengono dati personali reali.</p>
+
+{% if documenti | length %}
+<ol class="document-list">
+{% for documento in documenti | sortByDateDesc %}
+  <li>
+    <div>
+      <p class="eyebrow">{{ documento.category }}</p>
+      <h2>{{ documento.title }}</h2>
+      <time datetime="{{ documento.date }}">{{ documento.date | dateReadable }}</time>
+    </div>
+    <a class="button-link" href="{{ documento.file | relativeUrl(page.url) }}">Apri documento</a>
+  </li>
+{% endfor %}
+</ol>
+{% else %}
+<p>Non ci sono ancora documenti pubblici.</p>
+{% endif %}

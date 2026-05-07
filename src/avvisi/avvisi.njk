@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Avvisi
+description: "Elenco degli avvisi pubblici del condominio Via Calisina 9."
+permalink: /avvisi/
+---
+<h1>Avvisi</h1>
+
+<p>Gli avvisi sono ordinati dal più recente al meno recente.</p>
+
+{% if collections.avvisi | length %}
+<ol class="notice-list">
+{% for avviso in collections.avvisi %}
+  <li>
+    <time datetime="{{ avviso.date | htmlDateString }}">{{ avviso.date | dateReadable }}</time>
+    <h2><a href="{{ avviso.url | relativeUrl(page.url) }}">{{ avviso.data.title }}</a></h2>
+    <p>{{ avviso.data.summary }}</p>
+    <a class="text-link" href="{{ avviso.url | relativeUrl(page.url) }}">Leggi avviso</a>
+  </li>
+{% endfor %}
+</ol>
+{% else %}
+<p>Non ci sono ancora avvisi pubblicati.</p>
+{% endif %}
