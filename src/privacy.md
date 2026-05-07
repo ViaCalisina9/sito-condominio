@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
 title: Privacy
-description: "Informativa privacy semplice del sito Via Calisina 9."
+description: "Informativa privacy semplice del sito Via Casilina 9."
 permalink: /privacy/
 ---
 # Privacy
 
-Questo sito è un sito statico informativo del condominio Via Calisina 9.
+Questo sito è un sito statico informativo del condominio Via Casilina 9.
 
 Il sito non usa analytics, non usa cookie di profilazione, non contiene moduli di contatto e non raccoglie dati personali tramite database o backend applicativi.
 

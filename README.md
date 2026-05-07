@@ -1,6 +1,6 @@
-# Via Calisina 9 - sito condominiale
+# Via Casilina 9 - sito condominiale
 
-Sito statico pubblico del condominio e comprensorio di Via Calisina 9.
+Sito statico pubblico del condominio e comprensorio di Via Casilina 9.
 
 Repository ufficiale: <https://github.com/ViaCalisina9/sito-condominio.git>
 
@@ -84,7 +84,7 @@ Poi eseguire il normale flusso Git:
 ```bash
 git status
 git add .
-git commit -m "Crea sito statico del condominio Via Calisina 9"
+git commit -m "Crea sito statico del condominio Via Casilina 9"
 git push origin main
 ```
 

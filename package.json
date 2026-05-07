@@ -1,8 +1,8 @@
 {
-  "name": "sito-condominio-via-calisina-9",
+  "name": "sito-condominio-via-casilina-9",
   "version": "1.0.0",
   "private": true,
-  "description": "Sito statico pubblico del condominio Via Calisina 9.",
+  "description": "Sito statico pubblico del condominio Via Casilina 9.",
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"

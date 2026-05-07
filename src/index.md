@@ -1,14 +1,14 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: "Homepage del sito pubblico del condominio Via Calisina 9."
+description: "Homepage del sito pubblico del condominio Via Casilina 9."
 permalink: /
 templateEngineOverride: njk,md
 ---
 <div class="home-hero">
   <div class="home-hero__copy">
     <p class="eyebrow">Sito pubblico del condominio</p>
-    <h1>Via Calisina 9</h1>
+    <h1>Via Casilina 9</h1>
     <p class="lead">Uno spazio ordinato per avvisi, documenti pubblici e informazioni essenziali del condominio e comprensorio.</p>
     <div class="hero-actions" aria-label="Azioni principali">
       <a class="button-link" href="avvisi/">Consulta avvisi</a>
