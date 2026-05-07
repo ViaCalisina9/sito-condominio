@@ -2,7 +2,7 @@
 
 Sito statico pubblico del condominio e comprensorio di Via Casilina 9.
 
-Repository ufficiale: <https://github.com/ViaCalisina9/sito-condominio.git>
+Repository ufficiale: <https://github.com/ViaCasilina9/sito-condominio.git>
 
 Il sito usa Eleventy, contenuti Markdown, dati JSON, layout Nunjucks e CSS scritto a mano. Non usa WordPress, database, backend, analytics, Google Fonts, cookie di profilazione o risorse esterne obbligatorie.
 
@@ -96,7 +96,7 @@ Per collegare un dominio personalizzato:
 2. Aggiungere i record DNS richiesti da GitHub Pages presso il provider del dominio.
 3. Se serve, aggiungere un file `public/CNAME` con il dominio, per esempio `www.esempio.it`.
 
-Il sito usa link relativi, quindi può funzionare sia come pagina progetto, per esempio `https://viacalisina9.github.io/sito-condominio/`, sia con dominio custom.
+Il sito usa link relativi, quindi può funzionare sia come pagina progetto, per esempio `https://viacasilina9.github.io/sito-condominio/`, sia con dominio custom.
 
 ## Privacy
 

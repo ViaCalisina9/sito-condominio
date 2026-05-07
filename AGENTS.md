@@ -1,6 +1,6 @@
 # Istruzioni per Codex
 
-- Lavorare sempre nella repository esistente `https://github.com/ViaCalisina9/sito-condominio.git`.
+- Lavorare sempre nella repository esistente `https://github.com/ViaCasilina9/sito-condominio.git`.
 - Non creare nuove repository.
 - Non eseguire `git init`.
 - Non cambiare il remote `origin`.
